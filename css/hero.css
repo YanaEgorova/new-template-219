@@ -1,0 +1,208 @@
+.hero__wrapper-main {
+    border-bottom: .2rem solid var(--fourth-brand-color);
+}
+.hero {
+    text-align: center;
+    padding: 20rem 0;
+    position: relative;
+}
+.hero .title {
+    line-height: 1;
+    margin-bottom: 2rem;
+    position: relative;
+}
+.hero .text {
+    margin: 0 auto 3rem;
+    max-width: 35rem;
+}
+.relative-title {
+    background-color: var(--third-brand-color);
+    padding: 1rem;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
+
+.contacts {
+    padding: 15rem 0;
+    text-align: center;
+}
+.contacts .sub-title {
+    margin-bottom: 3rem;
+}
+.contacts__box {
+    max-width: 40rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 8rem;
+}
+.contacts__item:not(:last-child) {
+    margin-bottom: 2rem;
+}
+.contacts .text--mb  {
+    margin-bottom: 3rem;
+}
+.contacts__item {
+    background-color: var(--third-brand-color);
+    background-color: var(--second-brand-color);
+    padding: 2rem 1rem;
+}
+.contacts__item .text {
+    color: var(--sub-text-color);
+}
+.contacts__item-link .text {
+    transition: .3s ease-in-out;
+}
+.contacts .btn {
+    color: var(--fourth-brand-color);
+    background-color: transparent;
+}
+.contacts__list {
+    max-width: 90rem;
+    margin: 0 auto;
+}
+
+
+
+
+.policy__wrapper {
+    background-color: var(--main-bg-color);
+}
+.policy {
+    padding: 15rem 0;
+    text-align: center;
+    position: relative;
+}
+.policy .sub-title {
+    margin-bottom: 8rem;
+}
+.policy__sub-title {
+    font-family: var(--title-font);
+    color: var(--sub-text-color);
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+.policy__block {
+    max-width: 45rem;
+    margin: 0 auto;
+    background-color: var(--second-brand-color);
+    padding: 5rem;
+}
+.policy__block--top {
+    margin-bottom: 6rem;
+}
+.policy .text {
+    margin-bottom: 3rem;
+    color: var(--sub-text-color);
+}
+.policy .btn {
+    background-color: var(--sub-text-color);
+    border-color: var(--sub-text-color);
+    color: var(--second-brand-color);
+}
+
+
+
+
+
+.question {
+    padding: 12rem 0;
+    text-align: center;
+    position: relative;
+}
+.question .sub-title {
+    margin-bottom: 6rem;
+}
+.question__sub-title {
+    font-family: var(--title-font);
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+.question__item:not(:last-child) {
+    margin-bottom: 6rem;
+    position: relative;
+}
+.question__list {
+    max-width: 50rem;
+    margin: 0 auto;
+}
+
+
+
+
+@media screen and (min-width: 1440px)  {
+    .relative-title {
+        writing-mode: vertical-rl;
+        text-orientation: upright;
+        position: relative;
+    }
+    .hero__wrapper-main {
+        background-image: url('../img/bg2.jpeg');
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: cover;
+    }
+    .hero {
+        text-align: left;
+        padding: 30rem 0 25rem 15rem;
+    }
+    .hero .text,
+    .hero .btn {
+        margin-left: 0;
+    }
+    .hero .title {
+        width: fit-content;
+    }
+    .hero .title::before,
+    .hero .title::after,
+    .relative-title::before,
+    .relative-title::after {
+        position: absolute;
+        display: block;
+        content: '';
+        width: 12rem;
+        height: .3rem;
+        background-color: var(--main-text-color);
+        top: 50%;
+        left: -13rem;
+        transform: translate(0, -50%);
+    }
+    .hero .title::after,
+    .relative-title::after {
+        left: auto;
+        right: -13rem;
+    }
+
+
+    .contacts__item-link .text:hover {
+        letter-spacing: .2rem;
+    }
+
+
+    .policy__box {
+        display: flex;
+        justify-content: space-around;
+    }
+    .policy__block--top {
+        margin-bottom: 0;
+    }
+
+
+    .question__item:not(:last-child)::after {
+        position: absolute;
+        display: block;
+        content: '';
+        width: 10rem;
+        height: .3rem;
+        background-color: var(--second-brand-color);
+        left: 50%;
+        bottom: -3rem;
+        transform: translate(-50%, 0);
+    }
+}
+
