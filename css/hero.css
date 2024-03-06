@@ -177,6 +177,11 @@
         left: auto;
         right: -13rem;
     }
+    .hero__block {
+        background: var(--first-brand-color);
+        padding: 2rem;
+        width: 60%;
+    }
 
 
     .contacts__item-link .text:hover {
